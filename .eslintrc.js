@@ -1,7 +1,7 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true,
+    es6: true,
   },
   extends: [
     'plugin:react/recommended',
@@ -48,6 +48,7 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'react-hooks/exhaustive-deps': 'off',
     'import/no-extraneous-dependencies': 'off',
+    'no-use-before-define': 'off',
   },
   settings: {
     'import/resolver': {
