@@ -15,6 +15,18 @@ const theme = extendTheme({
     blue: '#20C5D2',
     gray: '#ECEDF3',
   },
+  components: {
+    Button: {
+      baseStyle: {
+        borderRadius: 'xl',
+      },
+    },
+    IconButton: {
+      baseStyle: {
+        borderRadius: 'full',
+      },
+    },
+  },
 });
 
 export default theme;
