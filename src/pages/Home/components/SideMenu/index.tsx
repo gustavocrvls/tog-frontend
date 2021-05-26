@@ -7,7 +7,7 @@ export function SideMenu({
   setSelectedCategory,
 }: SideMenuProps): JSX.Element {
   return (
-    <Box padding="20">
+    <Box padding="20" position="sticky" top="0" maxHeight="200px">
       <OrderedList listStyleType="none" margin="0">
         {categories.map((category, index) => (
           <ListItem

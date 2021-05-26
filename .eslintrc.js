@@ -49,6 +49,7 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'off',
     'import/no-extraneous-dependencies': 'off',
     'no-use-before-define': 'off',
+    'react/no-unescaped-entities': 'off',
   },
   settings: {
     'import/resolver': {
