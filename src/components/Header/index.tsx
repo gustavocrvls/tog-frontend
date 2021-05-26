@@ -7,8 +7,8 @@ export function Header(): JSX.Element {
       as="header"
       alignItems="center"
       justifyContent="space-between"
-      padding="3"
-      margin="0 100px"
+      padding="2rem 0px"
+      margin={['0 10px', '0 100px']}
     >
       <Text as="span">Tog.design</Text>
       <Box>
