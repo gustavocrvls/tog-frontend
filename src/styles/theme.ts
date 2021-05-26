@@ -42,6 +42,18 @@ const theme = extendTheme({
       body: {
         backgroundColor: 'background',
       },
+      '*::-webkit-scrollbar-track': {
+        borderRadius: '10px',
+        backgroundColor: 'gray',
+      },
+      '*::-webkit-scrollbar': {
+        width: '8px',
+        backgroundColor: 'textSecondary',
+      },
+      '*::-webkit-scrollbar-thumb': {
+        borderRadius: '10px',
+        backgroundColor: 'textSecondary',
+      },
     },
   },
 });
