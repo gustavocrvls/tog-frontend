@@ -1,8 +1,17 @@
-import { Box, Heading, SimpleGrid } from '@chakra-ui/layout';
+import {
+  Box,
+  Flex,
+  Heading,
+  ListItem,
+  OrderedList,
+  SimpleGrid,
+  Text,
+} from '@chakra-ui/layout';
+import { SideMenu } from './components/SideMenu';
 
 export function Home(): JSX.Element {
   return (
-    <Box>
+    <Flex>
       <SimpleGrid columns={2} gap="8">
         <Box backgroundColor="white" borderRadius="xl" padding="5">
           <img
@@ -23,7 +32,7 @@ export function Home(): JSX.Element {
           </Heading>
         </Box>
       </SimpleGrid>
-      <div>Menu Lateral</div>
-    </Box>
+      <SideMenu />
+    </Flex>
   );
 }
