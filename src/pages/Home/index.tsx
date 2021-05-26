@@ -1,15 +1,10 @@
-import {
-  Box,
-  Flex,
-  Heading,
-  ListItem,
-  OrderedList,
-  SimpleGrid,
-  Text,
-} from '@chakra-ui/layout';
+import { Box, Flex, Heading, SimpleGrid } from '@chakra-ui/layout';
+import { useState } from 'react';
 import { SideMenu } from './components/SideMenu';
 
 export function Home(): JSX.Element {
+  const [selectedCategory, setSelectedCategory] = useState('Strategy');
+
   return (
     <Flex>
       <SimpleGrid columns={2} gap="8">
@@ -32,7 +27,10 @@ export function Home(): JSX.Element {
           </Heading>
         </Box>
       </SimpleGrid>
-      <SideMenu />
+      <SideMenu
+        selectedCategory={selectedCategory}
+        setSelectedCategory={setSelectedCategory}
+      />
     </Flex>
   );
 }

@@ -4,11 +4,11 @@ export const categories = [
     description: 'Emerging, identifying',
   },
   {
-    title: 'Strategy',
+    title: 'Design',
     description: 'Researching, Design and Validation',
   },
   {
-    title: 'Strategy',
+    title: 'Development',
     description: 'From ideation to a product',
   },
 ];
